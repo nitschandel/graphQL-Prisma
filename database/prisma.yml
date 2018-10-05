@@ -1,0 +1,7 @@
+datamodel: datamodel.graphql
+secret: mysecret123
+seed:
+  import: seed.graphql
+hooks:
+  post-deploy:
+    - graphql get-schema --project database

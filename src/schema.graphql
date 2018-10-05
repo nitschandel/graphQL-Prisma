@@ -1,0 +1,9 @@
+# import User, AuthPayload, AllUsers from "./schemas/user.graphql"
+
+type Query {
+  users: AllUsers!
+}
+
+type Mutation {
+  login(email: String!, password: String!): AuthPayload
+}
